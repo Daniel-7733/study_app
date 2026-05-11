@@ -1,73 +1,37 @@
-# Study Web App
+# Study Timer Desktop App
 
-A Flask-based study companion for focused learning sessions.
+A beginner-friendly Tkinter desktop app idea for studying, taking notes, and reviewing flashcards.
 
-## Features
-- Study timer with break reminders
-- Notes page for saving what you learned
-- Flashcard creation
-- Review page for cards due today
-- SQLite database for local storage
+This starter project intentionally contains a clean folder structure without implementation code, so you and your friend can practice writing the app yourselves.
 
-## Tech Stack
+## Main Idea
+
+The app helps a learner study with structure:
+
+1. Start a focused study timer.
+2. Receive break reminders every 15 or 20 minutes.
+3. Save notes about what was learned.
+4. Create flashcards from those notes.
+5. Review flashcards later using simple spaced repetition, such as 3 days, 7 days, and 30 days.
+
+## Suggested First Version
+
+Start small:
+
+1. Build the main Tkinter window.
+2. Add navigation buttons between pages.
+3. Build the timer page.
+4. Build the notes page.
+5. Save notes into SQLite.
+6. Add flashcards.
+7. Add review dates.
+
+## Suggested Tech
+
 - Python
-- Flask
-- SQLite
-- HTML / CSS / JavaScript
+- Tkinter
+- SQLite using Python's built-in sqlite3 module
 
 ## Project Structure
-```text
-study_web_app/
-├── run.py
-├── requirements.txt
-├── .gitignore
-├── README.md
-├── app/
-│   ├── __init__.py
-│   ├── config.py
-│   ├── routes/
-│   ├── services/
-│   ├── database/
-│   ├── templates/
-│   ├── static/
-│   └── utils/
-└── data/
-```
 
-## How to Run
-1. Create a virtual environment:
-   ```bash
-   python -m venv .venv
-   ```
-2. Activate it:
-   - Windows:
-     ```bash
-     .venv\Scripts\activate
-     ```
-   - macOS / Linux:
-     ```bash
-     source .venv/bin/activate
-     ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the app:
-   ```bash
-   python run.py
-   ```
-5. Open the local address shown by Flask in your browser.
-
-## Current Routes
-- `/` Home page
-- `/timer` Timer page
-- `/notes` Notes page
-- `/flashcards` Flashcard creation page
-- `/review` Review page
-
-## Future Ideas
-- Edit and delete notes
-- Mark flashcards as reviewed
-- Session history page
-- Authentication
-- Better spaced repetition logic
+See `docs/project_summary.md` for the full structure and explanation.

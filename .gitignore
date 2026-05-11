@@ -1,92 +1,86 @@
-# Python cache
+# =========================
+# Python cache / compiled files
+# =========================
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pyd
 
-# Compiled extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-dist/
-downloads/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
+# =========================
 # Virtual environments
+# =========================
 .venv/
 venv/
 env/
 ENV/
-.python-version
 
-# Flask / environment files
+# =========================
+# Environment / secrets
+# =========================
 .env
 .env.*
 !.env.example
-instance/
 
-# Database files
-*.db
-*.sqlite
-*.sqlite3
-/data/*.db
-/data/*.sqlite
-/data/*.sqlite3
+# =========================
+# SQLite database files
+# Keep the folder, ignore local database files
+# =========================
+data/*.db
+data/*.sqlite
+data/*.sqlite3
 
-# Logs and runtime files
+# Keep empty data folder in Git
+!data/.gitkeep
+
+# =========================
+# Logs
+# =========================
 *.log
-*.out
-*.err
-*.pid
-*.pid.lock
+logs/
 
-# Coverage / testing
-.coverage
-.coverage.*
-.cache/
+# =========================
+# Test / coverage output
+# =========================
 .pytest_cache/
+.coverage
 htmlcov/
 .tox/
 .nox/
+
+# =========================
+# Build / packaging output
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# =========================
+# Type checker / linter cache
+# =========================
 .mypy_cache/
 .ruff_cache/
-.hypothesis/
+.pyre/
 
-# IDE / Editor
+# =========================
+# IDE / editor settings
+# =========================
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
+# =========================
 # OS files
+# =========================
 .DS_Store
 Thumbs.db
-desktop.ini
 
-# Node / frontend tooling (future-safe)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Local uploaded/generated assets
-uploads/
-app/static/uploads/
-app/static/generated/
-
-# Keep folder structure if empty
-!data/.gitkeep
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.bak
+*.old
